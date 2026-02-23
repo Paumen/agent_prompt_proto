@@ -1,0 +1,5 @@
+{
+  "name": "LLM Task Configurator",
+  "description": "Configure agentic tasks and generate Claude-optimized prompts from GitHub repositories.",
+  "requestFramePermissions": []
+}

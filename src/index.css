@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-shell: #e8e6e1;
+  --color-surface: #f5f0ea;
+  --color-surface-raised: #faf7f2;
+  --color-surface-inset: #eceae5;
+  --color-text-primary: #2c2926;
+  --color-text-secondary: #6b6560;
+  --color-text-tertiary: #9a9490;
+  --color-border: #d6d2cc;
+  --color-border-focus: #a09a94;
+  --color-accent: #4A6D70;
+  --color-accent-hover: #326a89;
+  --color-accent-subtle: #e9f0f5;
+  --color-danger: #c2553a;
+  --color-success: #4a8c6f;
+
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-mono: "SF Mono", "Cascadia Code", "Consolas", monospace;
+}
+
+body {
+  background-color: var(--color-shell);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+.shimmer {
+  background: linear-gradient(90deg, var(--color-surface-inset) 25%, #d6d2cc 50%, var(--color-surface-inset) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
